@@ -14,13 +14,13 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center space-x-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 fade-in-up">
-              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+              <Star className="w-4 h-4 text-accent fill-accent" />
               <span className="text-primary-foreground text-sm font-medium">Trusted by 2,000+ UK Families</span>
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight fade-in-up stagger-1">
               Professional Cleaning & Ironing Services in 
-              <span className="block text-yellow-400">England</span>
+              <span className="block text-accent">England</span>
             </h1>
             
             <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed fade-in-up stagger-2">
@@ -32,7 +32,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 onClick={scrollToBooking}
-                className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold px-8 py-4 text-lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-4 text-lg"
               >
                 Book Your Service Today
               </Button>
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 { icon: Star, text: "5-Star Rated" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-2 text-primary-foreground/90">
-                  <item.icon className="w-5 h-5 text-yellow-400" />
+                  <item.icon className="w-5 h-5 text-accent" />
                   <span className="text-sm font-medium">{item.text}</span>
                 </div>
               ))}
@@ -63,8 +63,8 @@ const HeroSection = () => {
           <div className="relative fade-in-up stagger-2">
             <div className="bg-background/10 backdrop-blur-sm rounded-3xl p-8 border border-primary-foreground/10">
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Professional cleaning service"
+                src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Beautiful clean house interior"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
               
@@ -75,7 +75,7 @@ const HeroSection = () => {
               
               <div className="absolute -top-4 -right-4 bg-background text-foreground px-4 py-2 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-1">
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="w-4 h-4 text-accent fill-accent" />
                   <span className="font-semibold">4.9/5</span>
                   <span className="text-sm text-muted-foreground">(2,340 reviews)</span>
                 </div>
