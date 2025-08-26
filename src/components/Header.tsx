@@ -62,10 +62,6 @@ const Header = () => {
 
         <div className="flex items-center space-x-4">
           <div className="hidden lg:flex items-center space-x-4 text-sm">
-            <div className="flex items-center space-x-1">
-              <Phone className="w-4 h-4 text-primary" />
-              <span>020 7123 4567</span>
-            </div>
             <a 
               href="https://wa.me/447368647001" 
               target="_blank" 

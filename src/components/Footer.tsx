@@ -26,9 +26,9 @@ const Footer = () => {
               cleaning, ironing, and household services since 2018.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 opacity-70 hover:opacity-100 cursor-pointer transition-opacity" />
-              <Instagram className="w-5 h-5 opacity-70 hover:opacity-100 cursor-pointer transition-opacity" />
-              <Twitter className="w-5 h-5 opacity-70 hover:opacity-100 cursor-pointer transition-opacity" />
+              <a href="https://www.facebook.com/share/1B5LKWgESe/?mibextid=wwXIfr">
+                <Facebook className="w-5 h-5 opacity-70 hover:opacity-100 cursor-pointer transition-opacity" />
+              </a>
             </div>
           </div>
 
@@ -47,14 +47,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Contact Info</h4>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 mt-0.5" />
-                <div>
-                  <p className="font-medium">020 7123 4567</p>
-                  <p className="text-sm opacity-90">Available 7 days a week</p>
-                </div>
-              </div>
-              
+
               <a 
                 href="https://wa.me/447368647001" 
                 target="_blank" 
@@ -79,8 +72,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-0.5" />
                 <div>
-                  <p className="font-medium">London & Surrounding Areas</p>
-                  <p className="text-sm opacity-90">Covering all major UK cities</p>
+                  <p className="font-medium">Basingstoke RG21 5NQ</p>
+                  <p className="text-sm opacity-90">Hampshire</p>
                 </div>
               </div>
             </div>
@@ -115,7 +108,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="opacity-90">
-            © 2024 SpotlessPro Cleaning Ironing Service LTD. All rights reserved. 
+            © 2022 SpotlessPro Cleaning Ironing Service LTD. All rights reserved.
             <span className="mx-2">|</span>
             Registered in England & Wales
             <span className="mx-2">|</span>

@@ -6,6 +6,14 @@ import { Button } from "@/components/ui/button";
 const ServicesSection = () => {
   const services = [
     {
+      icon: Shirt,
+      title: "Ironing Service",
+      description: "Professional ironing and garment care to keep your clothes looking perfect.",
+      features: ["Pickup & Delivery", "Delicate Fabric Care", "Shirt Pressing", "Same Day Service"],
+      price: "From £2/item",
+      color: "text-green-600"
+    },
+    {
       icon: Sparkles,
       title: "Regular Cleaning",
       description: "Weekly, bi-weekly, or monthly cleaning to keep your home spotless year-round.",
@@ -20,14 +28,6 @@ const ServicesSection = () => {
       features: ["Inside Appliances", "Window Cleaning", "Carpet Deep Clean", "Detailed Scrubbing"],
       price: "From £150/session",
       color: "text-purple-600"
-    },
-    {
-      icon: Shirt,
-      title: "Ironing Service",
-      description: "Professional ironing and garment care to keep your clothes looking perfect.",
-      features: ["Pickup & Delivery", "Delicate Fabric Care", "Shirt Pressing", "Same Day Service"],
-      price: "From £2/item",
-      color: "text-green-600"
     },
     {
       icon: Wrench,

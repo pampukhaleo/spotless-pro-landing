@@ -153,7 +153,7 @@ const BookingForm = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="address">Service Address *</Label>
+                  <Label htmlFor="address">Your Address *</Label>
                   <Input
                     id="address"
                     value={formData.address}
