@@ -17,32 +17,32 @@ const Header = () => {
           </div>
           <div>
             <h1 className="font-bold text-lg text-foreground">SpotlessPro</h1>
-            <p className="text-xs text-muted-foreground">Cleaning & Ironing</p>
+            <p className="text-xs text-primary/70">Cleaning & Ironing</p>
           </div>
         </div>
-        
+
         <nav className="hidden md:flex items-center space-x-6">
           <button 
             onClick={() => scrollToSection('services')}
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-primary hover:text-primary/80 transition-colors"
           >
             Services
           </button>
           <button 
             onClick={() => scrollToSection('about')}
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-primary hover:text-primary/80 transition-colors"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('reviews')}
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-primary hover:text-primary/80 transition-colors"
           >
             Reviews
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-primary hover:text-primary/80 transition-colors"
           >
             Contact
           </button>

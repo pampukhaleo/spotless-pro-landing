@@ -32,7 +32,7 @@ const AboutSection = () => {
             
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center p-4 rounded-lg bg-secondary/50">
+                <div key={index} className="text-center p-4 rounded-lg border-2 border-secondary/50">
                   <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
                   <div className="text-2xl font-bold text-foreground">{stat.number}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -43,12 +43,12 @@ const AboutSection = () => {
 
           <div className="space-y-6">
             <img 
-              src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="anton-SnKfmC1I9fU-unsplash.jpg"
               alt="Professional cleaning team"
               className="w-full h-64 object-cover rounded-xl shadow-lg"
             />
             <img 
-              src="https://images.unsplash.com/photo-1558618666-2c8c443c572a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="anton-SnKfmC1I9fU-unsplash.jpg"
               alt="Clean modern kitchen"
               className="w-full h-64 object-cover rounded-xl shadow-lg"
             />

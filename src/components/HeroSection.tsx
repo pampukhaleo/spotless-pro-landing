@@ -36,10 +36,10 @@ const HeroSection = () => {
               >
                 Book Your Service Today
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-4 text-lg"
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary/40 text-primary bg-white hover:bg-primary hover:text-white px-8 py-4 text-lg"
               >
                 Get Free Quote
               </Button>

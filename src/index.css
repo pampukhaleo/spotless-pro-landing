@@ -7,8 +7,17 @@
   :root {
     /* Palette: #217074 (primary), #37745B (secondary), #8B9D77 (muted-fore/trust),
        #E7EAEF (background), #EDC5AB (accent) */
-    --background: 217 20% 92%;           /* #E7EAEF */
-    --foreground: 183 56% 29%;           /* #217074 */
+    --background: 217 20% 92%;      /* #E7EAEF */
+    --foreground: 183 56% 29%;      /* #217074 */
+    --primary: 183 56% 29%;         /* #217074 */
+    --secondary: 157 36% 34%;       /* #37745B */
+    --trust: 93 14% 54%;            /* #8B9D77 — оставляем как бренд-акцент */
+
+    /* исправления */
+    --muted-foreground: 183 45% 28%;   /* было оливковым; теперь тёмно-бирюзовый — читабельно на #E7EAEF и #fff */
+    --accent-foreground: 210 10% 6%;   /* почти чёрный для текста на персиковом #EDC5AB */
+    --border: 210 16% 80%;             /* заметнее прежнего, видимые границы карточек */
+    --input: 210 16% 80%;
 
     --card: 0 0% 100%;                   /* #FFFFFF */
     --card-foreground: 183 56% 29%;      /* #217074 */
@@ -16,23 +25,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 183 56% 29%;
 
-    --primary: 183 56% 29%;              /* #217074 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 157 36% 34%;            /* #37745B */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 217 20% 92%;                /* same as background */
-    --muted-foreground: 93 14% 54%;      /* #8B9D77 */
 
     --accent: 24 61% 80%;                /* #EDC5AB (теплый беж, НЕ желтый) */
-    --accent-foreground: 183 56% 29%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 217 20% 92%;
-    --input: 217 20% 92%;
     --ring: 183 56% 29%;
 
     --radius: 0.5rem;
@@ -40,7 +43,6 @@
     --success: 157 36% 34%;              /* use secondary as success */
     --success-foreground: 0 0% 100%;
 
-    --trust: 93 14% 54%;                 /* #8B9D77 — приглушённый оливковый */
     --trust-foreground: 0 0% 100%;
 
     /* Sidebar variables */
@@ -121,38 +123,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.before-after-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.before-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: clip-path 0.3s ease;
-}
-
-.before-after-slider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: white;
-  transform: translateX(-50%);
-}
-
-.before-after-slider::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

@@ -58,10 +58,10 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card key={index} className="service-card-hover border-0 shadow-lg bg-card">
               <CardContent className="p-8 text-center">
-                <div className={`w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center ${service.color}`}>
+                <div className={`w-16 h-16 mx-auto mb-6 rounded-full bg-mist flex items-center justify-center border-2 border-primary ${service.color}`}>
                   <service.icon className="w-8 h-8" />
                 </div>
-                
+
                 <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                 
