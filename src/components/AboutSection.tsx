@@ -15,19 +15,21 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Badge className="mb-4 bg-trust text-trust-foreground">About SpotlessPro</Badge>
+            <Badge className="mb-4 bg-trust text-trust-foreground">About Us</Badge>
             <h2 className="text-4xl font-bold mb-6 text-foreground">
-              England's Most Trusted Cleaning Service Since 2018
+              SpotlessPro Cleaning-Ironing Services LTD
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              SpotlessPro Cleaning Ironing Service LTD has been transforming homes across England with our 
-              premium cleaning and household services. We combine traditional British attention to detail 
-              with modern efficiency to deliver exceptional results every time.
+              SpotlessPro Cleaning-Ironing Services LTD was founded by Yevheniia Lukianenko in 2025 officially. In 2022, I decided to do cleaning in England. Yevheniia believes that cleanliness in the house is the main aspect of life for every person, especially when there are children in the family.
+            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              By contacting us with a request for help with cleaning or other services, you will receive a detailed description of all the services that we provide. Yevheniia will also select an ideal convenient time for you.
+            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              Our fully insured, friendly team will come to your home and perform at the highest level all your tasks that you told us about. Thanks to accreditation and commitments in the field of labor protection and safety, we offer both one-time and regular services, adapted to your needs.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Our fully trained, insured, and background-checked team takes pride in treating your home 
-              with the same care we'd show our own. From busy professionals to growing families, 
-              we help you reclaim your time while maintaining a spotless home.
+              SpotlessPro Cleaning-Ironing Services LTD strives to provide exceptional home services that meet your needs. Our excellent reviews indicate that our customers are satisfied with our service. Our specialists do their job perfectly. We know the value of cleanliness and order in the house. And our team is ready to make it a reality. SpotlessPro Cleaning-Ironing Services LTD is your reliable partner in all matters of order in the house.
             </p>
             
             <div className="grid grid-cols-2 gap-6">

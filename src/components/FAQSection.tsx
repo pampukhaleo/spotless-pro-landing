@@ -9,56 +9,60 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "What services do you provide?",
-      answer: "House cleaning, flat cleaning, office cleaning, deep cleaning, end of Tenancy cleaning, special cleaning, one off/Spring Cleaning, Ironing. We also assemble and disassemble any type of furniture. We charge a simple hourly rate for all our services. View our regular domestic cleaning tasks for a list of the jobs you can leave to us!"
+      question: "Why choose us?",
+      answer: "We are a family-run team committed to friendly, reliable service and customer satisfaction. With over three years of industry experience, we take pride in delivering high-quality work with meticulous attention to detail."
     },
     {
-      question: "Am I bound by any contract for any of your cleaning services?",
-      answer: "You can cancel your cleaning at any time. We only ask that you give us 12 hours' notice."
+      question: "What services do you offer?",
+      answer: "We provide house cleaning, flat cleaning, office cleaning, deep cleaning, end of tenancy cleaning, special cleaning, one-off/spring cleaning, and ironing. We also assemble and disassemble all types of furniture. Our pricing is straightforward, charged at a simple hourly rate. For a list of tasks we cover, please see our regular domestic cleaning page."
     },
     {
-      question: "Do I need to book a minimum number of hours?",
-      answer: "Yes, the minimum time is 2 hours."
+      question: "Am I tied into a contract?",
+      answer: "No, you can cancel your cleaning service at any time with just 12 hours' notice."
+    },
+    {
+      question: "Is there a minimum booking time?",
+      answer: "Yes, the minimum booking is 2 hours per cleaner."
     },
     {
       question: "Are your cleaners insured?",
-      answer: "Yes, our cleaners are fully insured."
+      answer: "Yes, all our cleaners are fully insured for your peace of mind."
     },
     {
-      question: "Will the same cleaner visit each time?",
-      answer: "We'll always try to send the same cleaner, but this isn't always possible."
+      question: "Will I have the same cleaner each time?",
+      answer: "We aim to send the same cleaner whenever possible, but this cannot always be guaranteed."
     },
     {
-      question: "Do I have to be at home during my cleaning appointment?",
-      answer: "No. We provide safe storage of your keys if you give it to us. We will give the key to your cleaner or cleaners on the day of cleaning. The cleaner will return the key at the end of the day. Or what is very popular, you give us the code to the key box and we will return it after cleaning."
+      question: "Do I need to be at home during the cleaning?",
+      answer: "No, you don't have to be present. If you wish, you can provide us with your keys or a key safe code, which we handle securely. Your cleaner will return the keys once the job is complete."
     },
     {
-      question: "Do you working on Bank Holidays?",
-      answer: "Yes. The cost of services will be slightly higher."
+      question: "Do you work on Bank Holidays?",
+      answer: "Yes, we operate on Bank Holidays. Please note that rates may be slightly higher on these days."
     },
     {
-      question: "Can I book a specific time slot for my cleaning?",
-      answer: "Yes."
+      question: "Can I book a specific time for my cleaning?",
+      answer: "Yes, you can choose a time slot that suits you."
     },
     {
-      question: "Do I have to provide any cleaning products or equipment?",
-      answer: "We'll provide all of the cleaning chemicals unless you have any special requirements. We mainly use our own cleaning products and tools. Since we use eco-sprays that do not harm you and our employees. Having an electric mop and using a new mop attachment each time and washing the floor with steam, we thus remove dirt and germs as much as possible."
+      question: "Do I need to supply cleaning products and equipment?",
+      answer: "No, we provide all necessary cleaning products and equipment. We primarily use eco-friendly sprays that are safe for you and our team, along with professional tools like electric mops and steam cleaners to ensure a thorough clean."
     },
     {
-      question: "Do I need to bring my ironing or do you pick it up yourself?",
-      answer: "No, we will come ourselves and take everything, and the next day we will return your ironed things."
+      question: "Do you collect and return ironing?",
+      answer: "Yes, we will collect your laundry and return it freshly ironed, usually the next day."
     },
     {
-      question: "Does our employee have his own tools, or do I need to provide them to assemble or disassemble the furniture?",
-      answer: "Our employee has all the necessary professional tools."
+      question: "Do your staff bring their own tools for furniture assembly?",
+      answer: "Yes, our team carries all the professional tools required for assembling or disassembling furniture."
     },
     {
-      question: "How should I pay for your services?",
-      answer: "We accept payment for services both in cash and to a bank business account. Payment is made on the same day the service was provided."
+      question: "How do I pay for your services?",
+      answer: "Payments can be made in cash or by bank transfer on the day the service is completed."
     },
     {
-      question: "Do you give receipts?",
-      answer: "Yes, we issue an electronic check to your email."
+      question: "Do you provide receipts?",
+      answer: "Yes, we issue electronic receipts via email after each service."
     }
   ];
 
@@ -70,7 +74,7 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Want to know more about our cleaning service? Here are the answers to our frequently asked questions:
+            Want to know more about our cleaning services? Here are the answers to some common questions:
           </p>
         </div>
 
