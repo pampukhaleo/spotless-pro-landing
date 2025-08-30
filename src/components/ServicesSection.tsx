@@ -7,35 +7,51 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Shirt,
-      title: "Ironing Service",
-      description: "Professional ironing and garment care to keep your clothes looking perfect.",
-      features: ["Pickup & Delivery", "Delicate Fabric Care", "Shirt Pressing", "Same Day Service"],
-      price: "From £2/item",
+      title: "Ironing",
+      description: "We work on a Collect and Return basis. We use professional equipment, which gently irons all types of fabric, we also have special sprays that help iron problematic fabrics.",
+      features: ["Collect & Return", "Professional Equipment", "All Fabric Types", "24-48h Turnaround"],
+      price: "From £30 per 40l",
       color: "text-green-600"
     },
     {
       icon: Sparkles,
       title: "Regular Cleaning",
-      description: "Weekly, bi-weekly, or monthly cleaning to keep your home spotless year-round.",
-      features: ["Dusting & Vacuuming", "Kitchen & Bathroom Deep Clean", "Floor Mopping", "Bin Emptying"],
-      price: "From £25/hour",
+      description: "We recommend this done once or twice a month. We dust all surfaces, remove cobwebs, wipe all the mirrors, vacuum floors and carpets, mop hard floors and laminate.",
+      features: ["Dusting & Vacuuming", "Mirror Wiping", "Floor Mopping", "Bin Emptying", "Bedding Optional"],
+      price: "From £20/hour",
       color: "text-blue-600"
     },
     {
       icon: Zap,
       title: "Deep Cleaning",
-      description: "Comprehensive one-time or seasonal deep cleaning for a fresh start.",
-      features: ["Inside Appliances", "Window Cleaning", "Carpet Deep Clean", "Detailed Scrubbing"],
-      price: "From £150/session",
+      description: "Our deep cleaning service goes far beyond the basics. We provide a thorough clean of the kitchen, including the inside of appliances like the fridge, oven, and microwave.",
+      features: ["Inside Appliances", "Behind & Under Furniture", "Grout Scrubbing", "High-Touch Points", "Fresh & Sanitised"],
+      price: "From £30/hour",
       color: "text-purple-600"
     },
     {
       icon: Wrench,
-      title: "Furniture Assembly",
-      description: "Expert furniture assembly service for all your IKEA and flat-pack needs.",
-      features: ["All Brands Supported", "Tool Provision", "Cleanup Included", "Assembly Guarantee"],
-      price: "From £40/hour",
+      title: "Office Cleaning",
+      description: "We understand the importance of a clean, tidy workspace. Our office cleaning service covers everything from daily upkeep to detailed cleans.",
+      features: ["Desk & Communal Areas", "Sanitised High-Touch Points", "Carpet & Hard Floors", "Tailored to Schedule"],
+      price: "From £25/hour",
       color: "text-orange-600"
+    },
+    {
+      icon: Sparkles,
+      title: "End of Tenancy Cleaning",
+      description: "Our End of Tenancy cleaning service is designed to help tenants and landlords ensure the property is spotless and ready for the next chapter.",
+      features: ["Comprehensive Deep Clean", "Inside Appliances & Cupboards", "Behind & Under Furniture", "Deposit Back Guarantee"],
+      price: "From £30/hour",
+      color: "text-cyan-600"
+    },
+    {
+      icon: Zap,
+      title: "Post-Party Cleaning",
+      description: "Our Post Party cleaning service is here to take the stress out of tidying up after your celebrations.",
+      features: ["Complete Venue Clean-up", "Rubbish & Spill Removal", "Kitchen & Bathroom Sanitising", "Quick & Efficient"],
+      price: "From £30/hour",
+      color: "text-pink-600"
     }
   ];
 
@@ -50,11 +66,11 @@ const ServicesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Our Premium Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From regular maintenance to deep cleaning and specialized services, we've got your home covered.
+            We are happy to help you with any type of cleaning because we know how much time it can take. We know that each home is individual and the needs are unique.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="service-card-hover border-0 shadow-lg bg-card">
               <CardContent className="p-8 text-center">
