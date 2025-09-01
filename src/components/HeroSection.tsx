@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center space-x-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 fade-in-up">
               <Star className="w-4 h-4 text-accent fill-accent" />
-              <span className="text-primary-foreground text-sm font-medium">Trusted by 2,000+ UK Families</span>
+              <span className="text-primary-foreground text-sm font-medium">Trusted by 200+ UK Families</span>
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight fade-in-up stagger-1">
@@ -25,7 +25,7 @@ const HeroSection = () => {
             
             <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed fade-in-up stagger-2">
               Transform your home with our premium cleaning, ironing, and furniture assembly services. 
-              Trusted, insured, and rated 5-stars across London and beyond.
+              Trusted, insured, and rated 5-stars across Basingstoke + 20 miles.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8 fade-in-up stagger-3">
@@ -77,7 +77,7 @@ const HeroSection = () => {
                 <div className="flex items-center space-x-1">
                   <Star className="w-4 h-4 text-accent fill-accent" />
                   <span className="font-semibold">4.9/5</span>
-                  <span className="text-sm text-muted-foreground">(2,340 reviews)</span>
+                  <span className="text-sm text-muted-foreground">(211+ reviews)</span>
                 </div>
               </div>
             </div>

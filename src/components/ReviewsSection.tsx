@@ -61,7 +61,7 @@ const ReviewsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-foreground">What Our Customers Say</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what families across England think about SpotlessPro.
+            Here's what families across England think about SpotlessPro.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ const ReviewsSection = () => {
             </div>
             <div>
               <div className="text-2xl font-bold text-foreground">4.9/5</div>
-              <div className="text-sm text-muted-foreground">Based on 2,340+ reviews</div>
+              <div className="text-sm text-muted-foreground">Based on 200+ reviews</div>
             </div>
           </div>
         </div>

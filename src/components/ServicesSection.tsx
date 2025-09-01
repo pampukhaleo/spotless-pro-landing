@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Zap, Shirt, Wrench } from "lucide-react";
+import { Sparkles, Zap, Shirt, Wrench, Hammer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
@@ -18,7 +18,7 @@ const ServicesSection = () => {
       title: "Regular Cleaning",
       description: "We recommend this done once or twice a month. We dust all surfaces, remove cobwebs, wipe all the mirrors, vacuum floors and carpets, mop hard floors and laminate.",
       features: ["Dusting & Vacuuming", "Mirror Wiping", "Floor Mopping", "Bin Emptying", "Bedding Optional"],
-      price: "From £20/hour",
+      price: "From £30/hour",
       color: "text-blue-600"
     },
     {
@@ -26,7 +26,7 @@ const ServicesSection = () => {
       title: "Deep Cleaning",
       description: "Our deep cleaning service goes far beyond the basics. We provide a thorough clean of the kitchen, including the inside of appliances like the fridge, oven, and microwave.",
       features: ["Inside Appliances", "Behind & Under Furniture", "Grout Scrubbing", "High-Touch Points", "Fresh & Sanitised"],
-      price: "From £30/hour",
+      price: "From £45/hour",
       color: "text-purple-600"
     },
     {
@@ -34,7 +34,7 @@ const ServicesSection = () => {
       title: "Office Cleaning",
       description: "We understand the importance of a clean, tidy workspace. Our office cleaning service covers everything from daily upkeep to detailed cleans.",
       features: ["Desk & Communal Areas", "Sanitised High-Touch Points", "Carpet & Hard Floors", "Tailored to Schedule"],
-      price: "From £25/hour",
+      price: "From £45/hour",
       color: "text-orange-600"
     },
     {
@@ -42,7 +42,7 @@ const ServicesSection = () => {
       title: "End of Tenancy Cleaning",
       description: "Our End of Tenancy cleaning service is designed to help tenants and landlords ensure the property is spotless and ready for the next chapter.",
       features: ["Comprehensive Deep Clean", "Inside Appliances & Cupboards", "Behind & Under Furniture", "Deposit Back Guarantee"],
-      price: "From £30/hour",
+      price: "From £45/hour",
       color: "text-cyan-600"
     },
     {
@@ -50,8 +50,22 @@ const ServicesSection = () => {
       title: "Post-Party Cleaning",
       description: "Our Post Party cleaning service is here to take the stress out of tidying up after your celebrations.",
       features: ["Complete Venue Clean-up", "Rubbish & Spill Removal", "Kitchen & Bathroom Sanitising", "Quick & Efficient"],
-      price: "From £30/hour",
+      price: "From £45/hour",
       color: "text-pink-600"
+    },
+    {
+      icon: Hammer,
+      title: "Furniture Assembly",
+      description: "We assemble flat-pack and modular furniture quickly and safely. We bring professional tools, follow instructions, and tidy up packaging after the job.",
+      features: [
+        "IKEA/Argos/Wayfair flat-packs",
+        "Beds, wardrobes, desks, shelves",
+        "Own pro tools & fixings",
+        "Disassembly & re-assembly on request",
+        "Packaging clean-up"
+      ],
+      price: "From £30/hour",
+      color: "text-teal-600"
     }
   ];
 
@@ -70,17 +84,18 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {services.map((service, index) => (
-            <Card key={index} className="service-card-hover border-0 shadow-lg bg-card">
-              <CardContent className="p-8 text-center">
-                <div className={`w-16 h-16 mx-auto mb-6 rounded-full bg-mist flex items-center justify-center border-2 border-primary ${service.color}`}>
-                  <service.icon className="w-8 h-8" />
+            <Card key={index} className="service-card-hover border-0 shadow-lg bg-card h-full">
+              <CardContent className="p-8 text-center h-full flex flex-col">
+                {/* верх карточки */}
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-mist flex items-center justify-center border-2 border-primary">
+                  <service.icon className={`w-8 h-8 ${service.color}`} />
                 </div>
 
                 <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-                
+
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, i) => (
                     <li key={i} className="text-sm text-muted-foreground flex items-center justify-center">
@@ -89,14 +104,17 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-                
-                <div className="text-2xl font-bold text-primary mb-4">{service.price}</div>
-                <Button 
-                  onClick={scrollToBooking}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  Book Now
-                </Button>
+
+                {/* низ карточки — всегда прижат вниз */}
+                <div className="mt-auto w-full">
+                  <div className="text-2xl font-bold text-primary mb-4">{service.price}</div>
+                  <Button
+                    onClick={scrollToBooking}
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  >
+                    Book Now
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

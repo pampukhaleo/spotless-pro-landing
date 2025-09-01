@@ -4,8 +4,8 @@ import { Shield, Users, Clock, Award } from "lucide-react";
 
 const AboutSection = () => {
   const stats = [
-    { icon: Users, number: "2,000+", label: "Happy Families" },
-    { icon: Clock, number: "15,000+", label: "Hours Cleaned" },
+    { icon: Users, number: "200+", label: "Happy Families" },
+    { icon: Clock, number: "1500+", label: "Hours Cleaned" },
     { icon: Award, number: "4.9/5", label: "Average Rating" },
     { icon: Shield, number: "100%", label: "Insured & Bonded" }
   ];
@@ -45,12 +45,12 @@ const AboutSection = () => {
 
           <div className="space-y-6">
             <img 
-              src="anton-SnKfmC1I9fU-unsplash.jpg"
+              src={`${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`}
               alt="Professional cleaning team"
               className="w-full h-64 object-cover rounded-xl shadow-lg"
             />
             <img 
-              src="anton-SnKfmC1I9fU-unsplash.jpg"
+              src={`${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`}
               alt="Clean modern kitchen"
               className="w-full h-64 object-cover rounded-xl shadow-lg"
             />

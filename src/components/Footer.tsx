@@ -13,9 +13,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary-foreground text-primary rounded-lg flex items-center justify-center">
-                <span className="font-bold">SP</span>
-              </div>
+              <img src={ `${ import.meta.env.BASE_URL }/logo2.png` } className="h-[60px]" alt="logo"/>
               <div>
                 <h3 className="font-bold text-xl">SpotlessPro</h3>
                 <p className="text-sm opacity-90">Cleaning & Ironing Service LTD</p>

@@ -18,13 +18,11 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">SP</span>
-          </div>
-          <div>
-            <h1 className="font-bold text-lg text-foreground">SpotlessPro</h1>
-            <p className="text-xs text-primary/70">Cleaning & Ironing</p>
-          </div>
+          <img src={ `${ import.meta.env.BASE_URL }/logo.png` } className="h-[80px]" alt="logo"/>
+          {/*<div>*/}
+          {/*  <h1 className="font-bold text-lg text-foreground">SpotlessPro</h1>*/}
+          {/*  <p className="text-xs text-primary/70">Cleaning & Ironing LTD</p>*/}
+          {/*</div>*/}
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">

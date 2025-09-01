@@ -6,22 +6,21 @@ const BeforeAfterSection = () => {
 
   const beforeAfterImages = [
     {
-      before: 'anton-SnKfmC1I9fU-unsplash.jpg',
-      after:  'towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg',
+      before: `${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`,
+      after:  `${import.meta.env.BASE_URL}/towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg`,
       title: "Living Room Deep Clean",
     },
     {
-      before: "anton-SnKfmC1I9fU-unsplash.jpg",
-      after:  "towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg",
+      before: `${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`,
+      after:  `${import.meta.env.BASE_URL}/towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg`,
       title: "Kitchen Transformation",
     },
     {
-      before: "towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg",
-      after:  "anton-SnKfmC1I9fU-unsplash.jpg",
+      before: `${import.meta.env.BASE_URL}/towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg`,
+      after:  `${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`,
       title: "Bathroom Refresh",
     },
   ];
-
 
   return (
     <section className="py-20">
@@ -29,20 +28,19 @@ const BeforeAfterSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-foreground">See the Difference</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our professional cleaning transforms your space. See the incredible before and after results
-            from our satisfied customers across England.
+            Our professional cleaning transforms your space. Check out stunning before-and-after photos from happy customers across England.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {beforeAfterImages.map((item, index) => {
-            const FIRST_IMAGE = { imageUrl: item.before };
+            const FIRST_IMAGE = { imageUrl: item.before};
             const SECOND_IMAGE = { imageUrl: item.after };
 
             return (
               <Card key={ index } className="overflow-hidden shadow-2xl border-0">
                 <CardContent className="p-0">
-                  <div className="before-after-wrap relative w-full overflow-hidden rounded-xl h-[260px]">
+                  <div className="before-after-wrap relative w-full overflow-hidden rounded-xl">
                     <ReactBeforeSliderComponent
                       firstImage={ FIRST_IMAGE }
                       secondImage={ SECOND_IMAGE }
@@ -77,12 +75,12 @@ const BeforeAfterSection = () => {
             </div>
             <div className="w-px h-12 bg-border"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-success">2,340+</div>
+              <div className="text-3xl font-bold text-success">200+</div>
               <div className="text-sm text-muted-foreground">Homes Cleaned</div>
             </div>
             <div className="w-px h-12 bg-border"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-trust">5 Star</div>
+              <div className="text-3xl font-bold text-trust">5-Star</div>
               <div className="text-sm text-muted-foreground">Average Rating</div>
             </div>
           </div>

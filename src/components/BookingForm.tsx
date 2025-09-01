@@ -45,7 +45,9 @@ const BookingForm = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-foreground">Book Your Service</h2>
             <p className="text-xl text-muted-foreground">
-              Choose your service, pick a date, and we'll take care of the rest
+              Choose your service, pick a date, and we’ll take care of the rest.
+              Trusted Cleaning Company
+              Proudly serving families in Basingstoke and surrounding areas within a 20-mile radius. Offering cleaning, ironing, and housekeeping since 2022.
             </p>
           </div>
 
