@@ -42,12 +42,12 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Our Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Regular Cleaning</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Deep Cleaning</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Ironing Service</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Furniture Assembly</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">End of Tenancy</a></li>
-              <li><a href="#" className="opacity-90 hover:opacity-100 transition-opacity">Office Cleaning</a></li>
+              <li><a href="#regular-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Regular Cleaning</a></li>
+              <li><a href="#deep-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Deep Cleaning</a></li>
+              <li><a href="#ironing" className="opacity-90 hover:opacity-100 transition-opacity">Ironing Service</a></li>
+              <li><a href="#furniture-assembly" className="opacity-90 hover:opacity-100 transition-opacity">Furniture Assembly</a></li>
+              <li><a href="#end-of-tenancy" className="opacity-90 hover:opacity-100 transition-opacity">End of Tenancy</a></li>
+              <li><a href="#office-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Office Cleaning</a></li>
             </ul>
           </div>
 
@@ -68,13 +68,27 @@ const Footer = () => {
                 </div>
               </a>
               
-              <div className="flex items-start space-x-3">
+              <a 
+                href="tel:+447368647001"
+                className="flex items-start space-x-3 hover:opacity-80 transition-opacity"
+              >
+                <Phone className="w-5 h-5 mt-0.5" />
+                <div>
+                  <p className="font-medium">+447368647001</p>
+                  <p className="text-sm opacity-90">Direct line available</p>
+                </div>
+              </a>
+              
+              <a 
+                href="mailto:spotlessprohome@gmail.com"
+                className="flex items-start space-x-3 hover:opacity-80 transition-opacity"
+              >
                 <Mail className="w-5 h-5 mt-0.5" />
                 <div>
-                  <p className="font-medium">Yevaluky0723@gmail.com</p>
+                  <p className="font-medium">spotlessprohome@gmail.com</p>
                   <p className="text-sm opacity-90">Quick response guaranteed</p>
                 </div>
-              </div>
+              </a>
               
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-0.5" />

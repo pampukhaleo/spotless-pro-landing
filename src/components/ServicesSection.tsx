@@ -114,15 +114,17 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-          {services.map((service, index) => (
-            <Card key={index} className="service-card-hover border-0 shadow-lg bg-card h-full">
-              <CardContent className="p-8 text-center h-full flex flex-col">
-                {/* верх карточки */}
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-mist flex items-center justify-center border-2 border-primary">
-                  <service.icon className={`w-8 h-8 ${service.color}`} />
-                </div>
+          {services.map((service, index) => {
+            const serviceId = service.title.toLowerCase().replace(/\s+/g, '-');
+            return (
+              <Card key={index} id={serviceId} className="service-card-hover border-0 shadow-lg bg-card h-full">
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  {/* верх карточки */}
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-mist flex items-center justify-center border-2 border-primary">
+                    <service.icon className={`w-8 h-8 ${service.color}`} />
+                  </div>
 
-                <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
 
                 <ul className="space-y-2 mb-6">
@@ -146,7 +148,8 @@ const ServicesSection = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

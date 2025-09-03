@@ -35,36 +35,36 @@ const Header = () => {
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <button 
-            onClick={() => scrollToSection('services')}
+          <a 
+            href="#services"
             className="text-primary hover:text-primary/80 transition-colors"
           >
             Services
-          </button>
-          <button 
-            onClick={() => scrollToSection('about')}
+          </a>
+          <a 
+            href="#about"
             className="text-primary hover:text-primary/80 transition-colors"
           >
             About
-          </button>
-          <button 
-            onClick={() => scrollToSection('reviews')}
+          </a>
+          <a 
+            href="#reviews"
             className="text-primary hover:text-primary/80 transition-colors"
           >
             Reviews
-          </button>
-          <button 
-            onClick={() => scrollToSection('faq')}
+          </a>
+          <a 
+            href="#faq"
             className="text-primary hover:text-primary/80 transition-colors"
           >
             FAQ
-          </button>
-          <button 
-            onClick={() => scrollToSection('contact')}
+          </a>
+          <a 
+            href="#contact"
             className="text-primary hover:text-primary/80 transition-colors"
           >
             Contact
-          </button>
+          </a>
         </nav>
 
         <div className="flex items-center space-x-4">
@@ -78,10 +78,20 @@ const Header = () => {
               <WhatsAppIcon />
               <span>+447368647001</span>
             </a>
-            <div className="flex items-center space-x-1">
+            <a 
+              href="tel:+447368647001"
+              className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors"
+            >
+              <Phone className="w-4 h-4 text-primary" />
+              <span>+447368647001</span>
+            </a>
+            <a 
+              href="mailto:spotlessprohome@gmail.com"
+              className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors"
+            >
               <Mail className="w-4 h-4 text-primary" />
               <span>spotlessprohome@gmail.com</span>
-            </div>
+            </a>
           </div>
           <Button 
             onClick={() => scrollToSection('booking')}
