@@ -71,7 +71,7 @@ const Header = () => {
             </a>
             <div className="flex items-center space-x-1">
               <Mail className="w-4 h-4 text-primary" />
-              <span>Yevaluky0723@gmail.com</span>
+              <span>spotlessprohome@gmail.com</span>
             </div>
           </div>
           <Button 

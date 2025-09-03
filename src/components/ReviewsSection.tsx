@@ -6,52 +6,40 @@ import { Star } from "lucide-react";
 const ReviewsSection = () => {
   const reviews = [
     {
-      name: "Sarah Johnson",
-      location: "Kensington, London",
+      name: "amna noor a.",
       rating: 5,
-      text: "Absolutely brilliant service! The team arrives on time, works efficiently, and leaves my home sparkling. The ironing service is a game-changer for my busy lifestyle.",
-      avatar: "SJ",
-      service: "Regular Cleaning + Ironing"
+      text: "Vova did an amazing job setting up our bed and cupboard! Very efficiently done!",
+      avatar: "AN",
     },
     {
-      name: "Michael Chen",
-      location: "Brighton",
+      name: "Maria H.",
       rating: 5,
-      text: "Had SpotlessPro assemble our entire IKEA order and do a deep clean before we moved in. Professional, reliable, and excellent value for money. Highly recommended!",
-      avatar: "MC",
-      service: "Deep Cleaning + Furniture Assembly"
+      text: "Vova did an amazing job building a large climbing frame in our garden. He was very professional, neat, quick and efficient, I highly recommended his services",
+      avatar: "MH",
     },
     {
-      name: "Emma Williams",
-      location: "Manchester",
+      name: "Muhammad Q.",
       rating: 5,
-      text: "I've been using SpotlessPro for 6 months now. They're consistent, trustworthy, and go above and beyond. My house has never looked better!",
-      avatar: "EW",
-      service: "Regular Cleaning"
+      text: "Vova would be your excellent choice for any kind of carpentry work. He is punctual efficient and get the job done. Highly recommended",
+      avatar: "MQ",
     },
     {
-      name: "David Thompson",
-      location: "Birmingham",
+      name: "Anastasia F.",
       rating: 5,
-      text: "The deep cleaning service was phenomenal. They tackled areas I didn't even think to clean. Great communication and the team was friendly and professional.",
-      avatar: "DT",
-      service: "Deep Cleaning"
+      text: "Vova was fantastic - punctual, polite and very efficient. He constructed a king size bed by himself in well under 2 hrs. We'll continue to utilize his services whenever possible. Thank you Vova!",
+      avatar: "AF",
     },
     {
-      name: "Lisa Parker",
-      location: "Bristol",
+      name: "Derek W.",
       rating: 5,
-      text: "Best decision ever! The ironing service saves me hours every week. Clothes come back perfectly pressed and on time. The cleaning service is top-notch too.",
-      avatar: "LP",
-      service: "Ironing + Regular Cleaning"
+      text: "Excellent work at building a child's toy kitchen",
+      avatar: "DW",
     },
     {
-      name: "James Mitchell",
-      location: "Leeds",
+      name: "Mohammad I.",
       rating: 5,
       text: "Exceptional service from start to finish. Easy booking, transparent pricing, and outstanding results. The team even helped reorganize my kitchen cupboards!",
       avatar: "JM",
-      service: "Deep Cleaning"
     }
   ];
 
@@ -89,8 +77,6 @@ const ReviewsSection = () => {
                   
                   <div className="flex-1">
                     <div className="font-semibold text-foreground">{review.name}</div>
-                    <div className="text-sm text-muted-foreground">{review.location}</div>
-                    <div className="text-xs text-primary font-medium mt-1">{review.service}</div>
                   </div>
                 </div>
               </CardContent>
@@ -107,7 +93,7 @@ const ReviewsSection = () => {
             </div>
             <div>
               <div className="text-2xl font-bold text-foreground">4.9/5</div>
-              <div className="text-sm text-muted-foreground">Based on 200+ reviews</div>
+              <div className="text-sm text-muted-foreground">Based on 211+ reviews</div>
             </div>
           </div>
         </div>

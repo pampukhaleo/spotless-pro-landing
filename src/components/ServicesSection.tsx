@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Zap, Shirt, Wrench, Hammer } from "lucide-react";
+import { Sparkles, Zap, Shirt, Wrench, Hammer, Brush, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
@@ -66,6 +66,35 @@ const ServicesSection = () => {
       ],
       price: "From £30/hour",
       color: "text-teal-600"
+    },
+    {
+      icon: Brush,
+      title: "Carpet Cleaning",
+      description:
+        "Professional carpet and carpet-tile shampoo. Price depends on the level of soiling. Child- and pet-safe detergents.",
+      features: [
+        "Hot Water Extraction",
+        "Stain & Odour Treatment",
+        "Edge & High-Traffic Areas",
+        "Fast Drying",
+        "Minimum Order £75"
+      ],
+      price: "From £5/m² (min £75)",
+      color: "text-emerald-600"
+    },
+    {
+      icon: Leaf,
+      title: "Garden Help",
+      description:
+        "Handy help for your garden and outdoor areas. We handle waste, refresh hard surfaces and fencing, and assemble outdoor furniture.",
+      features: [
+        "Rubbish Removal & Disposal",
+        "Patio/Tile Cleaning",
+        "Fence Painting",
+        "Garden Furniture Assembly"
+      ],
+      price: "From £30/hour (min £150)",
+      color: "text-lime-600"
     }
   ];
 
