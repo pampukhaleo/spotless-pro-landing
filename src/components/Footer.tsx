@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <p className="opacity-90 leading-relaxed mb-4">
               England's most trusted cleaning service, serving families across the UK with premium 
-              cleaning, ironing, and household services since 2018.
+              cleaning, ironing, and household services since 2022.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/1B5LKWgESe/?mibextid=wwXIfr">
