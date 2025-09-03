@@ -45,12 +45,12 @@ const AboutSection = () => {
 
           <div className="space-y-6">
             <img 
-              src={`${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`}
+              src={`anton-SnKfmC1I9fU-unsplash.jpg`}
               alt="Professional cleaning team"
               className="w-full h-64 object-cover rounded-xl shadow-lg"
             />
             <img 
-              src={`${import.meta.env.BASE_URL}/anton-SnKfmC1I9fU-unsplash.jpg`}
+              src={`anton-SnKfmC1I9fU-unsplash.jpg`}
               alt="Clean modern kitchen"
               className="w-full h-64 object-cover rounded-xl shadow-lg"
             />

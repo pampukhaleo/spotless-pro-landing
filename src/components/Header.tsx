@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src={`${import.meta.env.BASE_URL}/logo.png`} 
+            src={`logo.png`}
             className="h-[80px] cursor-pointer" 
             alt="SpotlessPro Cleaning & Ironing Service - Professional cleaning company logo"
             onClick={scrollToTop}

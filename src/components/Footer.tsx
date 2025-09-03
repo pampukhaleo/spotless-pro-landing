@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src={`${import.meta.env.BASE_URL}/logo2.png`} 
+                src={`logo2.png`}
                 className="h-[60px] cursor-pointer" 
                 alt="SpotlessPro Cleaning & Ironing Service - Professional cleaning company logo"
                 onClick={scrollToTop}
