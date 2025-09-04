@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Zap, Shirt, Wrench, Hammer, Brush, Leaf } from "lucide-react";
+import { Sparkles, Zap, Shirt, LampDesk, Hammer, BrushCleaning, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
@@ -30,7 +30,7 @@ const ServicesSection = () => {
       color: "text-purple-600"
     },
     {
-      icon: Wrench,
+      icon: LampDesk,
       title: "Office Cleaning",
       description: "We understand the importance of a clean, tidy workspace. Our office cleaning service covers everything from daily upkeep to detailed cleans.",
       features: ["Desk & Communal Areas", "Sanitised High-Touch Points", "Carpet & Hard Floors", "Tailored to Schedule"],
@@ -68,7 +68,7 @@ const ServicesSection = () => {
       color: "text-teal-600"
     },
     {
-      icon: Brush,
+      icon: BrushCleaning,
       title: "Carpet Cleaning",
       description:
         "Professional carpet and carpet-tile shampoo. Price depends on the level of soiling. Child- and pet-safe detergents.",
