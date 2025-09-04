@@ -16,6 +16,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 const BookingForm = () => {
   const [date, setDate] = useState<Date>();
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -42,19 +43,23 @@ const BookingForm = () => {
     setIsSubmitting(true);
 
     try {
+      console.log('Submitting booking:', { ...formData, date: format(date, "PPP") });
+      
       // Call the Telegram edge function
-      const { error } = await supabase.functions.invoke('send-booking-to-telegram', {
+      const { data, error } = await supabase.functions.invoke('send-booking-to-telegram', {
         body: {
           ...formData,
           date: format(date, "PPP"),
         }
       });
 
+      console.log('Edge function response:', { data, error });
+
       if (error) {
         console.error('Error sending booking:', error);
         toast({
           title: "Submission Error",
-          description: "There was an error sending your booking. Please try again or call us directly.",
+          description: `There was an error sending your booking: ${error.message}. Please try again or call us directly at +44 7368 647001.`,
           variant: "destructive",
         });
         return;
@@ -78,11 +83,11 @@ const BookingForm = () => {
       });
       setDate(undefined);
 
-    } catch (error) {
+    } catch (error: any) {
       console.error('Unexpected error:', error);
       toast({
         title: "Submission Error",
-        description: "There was an unexpected error. Please try again or call us directly at +44 7368 647001.",
+        description: `There was an unexpected error: ${error.message}. Please try again or call us directly at +44 7368 647001.`,
         variant: "destructive",
       });
     } finally {
@@ -155,11 +160,16 @@ const BookingForm = () => {
                       <SelectTrigger>
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="bg-background z-50">
                         <SelectItem value="regular-cleaning">Regular Cleaning</SelectItem>
                         <SelectItem value="deep-cleaning">Deep Cleaning</SelectItem>
                         <SelectItem value="ironing">Ironing Service</SelectItem>
                         <SelectItem value="furniture-assembly">Furniture Assembly</SelectItem>
+                        <SelectItem value="office-cleaning">Office Cleaning</SelectItem>
+                        <SelectItem value="end-of-tenancy">End of Tenancy Cleaning</SelectItem>
+                        <SelectItem value="post-party">Post-Party Cleaning</SelectItem>
+                        <SelectItem value="carpet-cleaning">Carpet Cleaning</SelectItem>
+                        <SelectItem value="garden-help">Garden Help</SelectItem>
                         <SelectItem value="cleaning-ironing">Cleaning + Ironing</SelectItem>
                         <SelectItem value="cleaning-assembly">Cleaning + Assembly</SelectItem>
                       </SelectContent>
@@ -168,7 +178,7 @@ const BookingForm = () => {
 
                   <div className="space-y-2">
                     <Label>Preferred Date *</Label>
-                    <Popover>
+                    <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
                       <PopoverTrigger asChild>
                         <Button
                           variant="outline"
@@ -181,11 +191,14 @@ const BookingForm = () => {
                           {date ? format(date, "PPP") : <span>Pick a date</span>}
                         </Button>
                       </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
+                      <PopoverContent className="w-auto p-0 bg-background z-50" align="start">
                         <Calendar
                           mode="single"
                           selected={date}
-                          onSelect={setDate}
+                          onSelect={(selectedDate) => {
+                            setDate(selectedDate);
+                            setIsCalendarOpen(false); // Close calendar after selection
+                          }}
                           disabled={(date) => date < new Date()}
                           initialFocus
                           className={cn("p-3 pointer-events-auto")}
@@ -200,7 +213,7 @@ const BookingForm = () => {
                       <SelectTrigger>
                         <SelectValue placeholder="Select time slot" />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="bg-background z-50">
                         <SelectItem value="9am-12pm">9:00 AM - 12:00 PM</SelectItem>
                         <SelectItem value="12pm-3pm">12:00 PM - 3:00 PM</SelectItem>
                         <SelectItem value="3pm-6pm">3:00 PM - 6:00 PM</SelectItem>

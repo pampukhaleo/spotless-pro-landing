@@ -17,18 +17,29 @@ interface BookingRequest {
 }
 
 serve(async (req) => {
+  console.log('Edge function called:', req.method, req.url);
+  
   // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
+    console.log('CORS preflight request');
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
+    console.log('Processing booking request...');
     const booking: BookingRequest = await req.json();
+    console.log('Booking data received:', JSON.stringify(booking, null, 2));
     
     // Get Telegram credentials from environment
     const botToken = Deno.env.get('SPOTLESSPRO_TG_ID');
     const chatId1 = Deno.env.get('SPOTLESSPRO_CHAT_ID1');
     const chatId2 = Deno.env.get('SPOTLESSPRO_CHAT_ID2');
+
+    console.log('Environment check:', {
+      hasBotToken: !!botToken,
+      hasChatId1: !!chatId1, 
+      hasChatId2: !!chatId2
+    });
 
     if (!botToken || !chatId1 || !chatId2) {
       console.error('Missing Telegram credentials');
@@ -133,6 +144,11 @@ function getServiceName(service: string): string {
     'deep-cleaning': 'Генеральная уборка',
     'ironing': 'Глажка белья',
     'furniture-assembly': 'Сборка мебели',
+    'office-cleaning': 'Уборка офисов',
+    'end-of-tenancy': 'Уборка при выезде',
+    'post-party': 'Уборка после мероприятий',
+    'carpet-cleaning': 'Чистка ковров',
+    'garden-help': 'Помощь в саду',
     'cleaning-ironing': 'Уборка + Глажка',
     'cleaning-assembly': 'Уборка + Сборка мебели'
   };
