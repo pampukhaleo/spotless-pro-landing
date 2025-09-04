@@ -8,13 +8,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { CalendarIcon, CheckCircle } from "lucide-react";
+import { CalendarIcon, CheckCircle, Loader2 } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const BookingForm = () => {
   const [date, setDate] = useState<Date>();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,13 +27,67 @@ const BookingForm = () => {
     specialRequests: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", { ...formData, date });
-    toast({
-      title: "Booking Request Submitted!",
-      description: "We'll contact you within 2 hours to confirm your appointment.",
-    });
+    
+    if (!date) {
+      toast({
+        title: "Error",
+        description: "Please select a preferred date.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // Call the Telegram edge function
+      const { error } = await supabase.functions.invoke('send-booking-to-telegram', {
+        body: {
+          ...formData,
+          date: format(date, "PPP"),
+        }
+      });
+
+      if (error) {
+        console.error('Error sending booking:', error);
+        toast({
+          title: "Submission Error",
+          description: "There was an error sending your booking. Please try again or call us directly.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // Success
+      toast({
+        title: "Booking Request Submitted!",
+        description: "We've received your request and will contact you within 2 hours to confirm your appointment.",
+      });
+
+      // Clear the form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        service: "",
+        timeSlot: "",
+        specialRequests: ""
+      });
+      setDate(undefined);
+
+    } catch (error) {
+      console.error('Unexpected error:', error);
+      toast({
+        title: "Submission Error",
+        description: "There was an unexpected error. Please try again or call us directly at +44 7368 647001.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -192,9 +248,17 @@ const BookingForm = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-success hover:bg-success/90 text-success-foreground font-semibold py-4 text-lg"
+                  disabled={isSubmitting}
+                  className="w-full bg-success hover:bg-success/90 text-success-foreground font-semibold py-4 text-lg disabled:opacity-50"
                 >
-                  Submit Booking Request
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Отправка заявки...
+                    </>
+                  ) : (
+                    "Submit Booking Request"
+                  )}
                 </Button>
               </form>
             </CardContent>

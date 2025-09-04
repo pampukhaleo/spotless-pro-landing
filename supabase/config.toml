@@ -1,1 +1,4 @@
 project_id = "cdqolplrdwwxdbnlgize"
+
+[functions.send-booking-to-telegram]
+verify_jwt = false
