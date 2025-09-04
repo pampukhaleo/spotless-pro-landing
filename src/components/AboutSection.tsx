@@ -45,14 +45,14 @@ const AboutSection = () => {
 
           <div className="space-y-6">
             <img 
-              src={`anton-SnKfmC1I9fU-unsplash.jpg`}
+              src={`giorgio-trovato-5TXz228u4eo-unsplash.jpg`}
               alt="Professional cleaning team"
-              className="w-full h-64 object-cover rounded-xl shadow-lg"
+              className="w-full h-84 object-cover rounded-xl shadow-lg"
             />
             <img 
-              src={`anton-SnKfmC1I9fU-unsplash.jpg`}
+              src={`cdc-VRpjDw3WqqI-unsplash.jpg`}
               alt="Clean modern kitchen"
-              className="w-full h-64 object-cover rounded-xl shadow-lg"
+              className="w-full h-84 object-cover rounded-xl shadow-lg"
             />
           </div>
         </div>
