@@ -42,12 +42,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Our Services</h4>
             <ul className="space-y-3">
+              <li><a href="#ironing" className="opacity-90 hover:opacity-100 transition-opacity">Ironing</a></li>
               <li><a href="#regular-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Regular Cleaning</a></li>
               <li><a href="#deep-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Deep Cleaning</a></li>
-              <li><a href="#ironing" className="opacity-90 hover:opacity-100 transition-opacity">Ironing Service</a></li>
-              <li><a href="#furniture-assembly" className="opacity-90 hover:opacity-100 transition-opacity">Furniture Assembly</a></li>
-              <li><a href="#end-of-tenancy" className="opacity-90 hover:opacity-100 transition-opacity">End of Tenancy</a></li>
               <li><a href="#office-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Office Cleaning</a></li>
+              <li><a href="#end-of-tenancy-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">End of Tenancy Cleaning</a></li>
+              <li><a href="#post-party-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Post-Party Cleaning</a></li>
+              <li><a href="#furniture-assembly" className="opacity-90 hover:opacity-100 transition-opacity">Furniture Assembly</a></li>
+              <li><a href="#carpet-cleaning" className="opacity-90 hover:opacity-100 transition-opacity">Carpet Cleaning</a></li>
+              <li><a href="#garden-help" className="opacity-90 hover:opacity-100 transition-opacity">Garden Help</a></li>
             </ul>
           </div>
 
