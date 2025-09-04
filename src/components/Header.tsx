@@ -28,10 +28,6 @@ const Header = () => {
             alt="SpotlessPro Cleaning & Ironing Service - Professional cleaning company logo"
             onClick={scrollToTop}
           />
-          {/*<div>*/}
-          {/*  <h1 className="font-bold text-lg text-foreground">SpotlessPro</h1>*/}
-          {/*  <p className="text-xs text-primary/70">Cleaning & Ironing LTD</p>*/}
-          {/*</div>*/}
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
@@ -76,13 +72,6 @@ const Header = () => {
               className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors"
             >
               <WhatsAppIcon />
-              <span>+447368647001</span>
-            </a>
-            <a 
-              href="tel:+447368647001"
-              className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors"
-            >
-              <Phone className="w-4 h-4 text-primary" />
               <span>+447368647001</span>
             </a>
             <a 

@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="opacity-90 leading-relaxed mb-4">
-              England's most trusted cleaning service, serving families across the UK with premium 
+              England's most trusted cleaning service, serving families in Basingstoke +20miles radius with premium
               cleaning, ironing, and household services since 2022.
             </p>
             <div className="flex space-x-4">
