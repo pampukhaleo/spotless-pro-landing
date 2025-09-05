@@ -11,7 +11,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpotlessPro | Professional Cleaning & Ironing Services in Basingstoke | Same Day Service</title>
+    <title>SpotlessPro | Cleaning & Ironing in Basingstoke</title>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://spotlessprohome.co.uk/" />
@@ -33,6 +33,12 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#2563eb" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+     <!-- Resource hints for performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="/anton-SnKfmC1I9fU-unsplash.jpg" as="image" type="image/jpeg" />
@@ -65,7 +71,7 @@
         "@type": "Person",
         "name": "Vova"
       },
-      "priceRange": "£30-£75",
+      "priceRange": "£25-£150+",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Basingstoke",
@@ -115,7 +121,8 @@
         "Office Cleaning",
         "Furniture Assembly",
         "Post-Party Cleaning",
-        "Carpet Cleaning"
+        "Carpet Cleaning",
+        "Garden Help"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -165,6 +172,86 @@
               "name": "Regular Cleaning",
               "description": "Weekly or bi-weekly cleaning service"
             },
+            "price": "25",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "25",
+              "priceCurrency": "GBP",
+              "unitText": "per hour"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deep Cleaning",
+              "description": "Comprehensive deep cleaning service"
+            },
+            "price": "35",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "35",
+              "priceCurrency": "GBP",
+              "unitText": "per hour"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Office Cleaning",
+              "description": "Professional office cleaning service"
+            },
+            "price": "35",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "35",
+              "priceCurrency": "GBP",
+              "unitText": "per hour"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "End of Tenancy Cleaning",
+              "description": "Complete end of tenancy cleaning service"
+            },
+            "price": "35",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "35",
+              "priceCurrency": "GBP",
+              "unitText": "per hour"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Post-Party Cleaning",
+              "description": "Professional post-party cleaning service"
+            },
+            "price": "35",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "35",
+              "priceCurrency": "GBP",
+              "unitText": "per hour"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Furniture Assembly",
+              "description": "Professional furniture assembly service"
+            },
             "price": "30",
             "priceCurrency": "GBP",
             "priceSpecification": {
@@ -178,19 +265,51 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Deep Cleaning",
-              "description": "Comprehensive deep cleaning service"
+              "name": "Carpet Cleaning",
+              "description": "Professional carpet cleaning service - from £5/m² with £75 minimum order"
             },
-            "price": "45",
+            "price": "75",
             "priceCurrency": "GBP",
             "priceSpecification": {
               "@type": "PriceSpecification",
-              "price": "45",
+              "price": "75",
               "priceCurrency": "GBP",
-              "unitText": "per hour"
+              "unitText": "minimum order"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garden Help",
+              "description": "Professional garden maintenance and help service"
+            },
+            "price": "30",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "30",
+              "priceCurrency": "GBP",
+              "unitText": "per hour",
+              "minPrice": "150"
             }
           }
         ]
+      }
+    }
+    </script>
+
+    <!-- WebSite Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SpotlessPro Cleaning & Ironing Service",
+      "url": "https://spotlessprohome.co.uk/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.google.com/search?q=site%3Aspotlessprohome.co.uk+{search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
     </script>
@@ -293,7 +412,7 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-TUsd6Nbm.js"></script>
+    <script type="module" crossorigin src="/assets/index-fzH3eOoZ.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DfvbDlw0.css">
   </head>
 
