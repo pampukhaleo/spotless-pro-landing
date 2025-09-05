@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="opacity-90 leading-relaxed mb-4">
-              England's most trusted cleaning service, serving families in Basingstoke +20miles radius with premium
+              England's most trusted cleaning service, serving families in Basingstoke +20 miles radius with premium
               cleaning, ironing, and household services since 2022.
             </p>
             <div className="flex space-x-4">
@@ -68,17 +68,6 @@ const Footer = () => {
                 <div>
                   <p className="font-medium">+447368647001</p>
                   <p className="text-sm opacity-90">WhatsApp available</p>
-                </div>
-              </a>
-              
-              <a 
-                href="tel:+447368647001"
-                className="flex items-start space-x-3 hover:opacity-80 transition-opacity"
-              >
-                <Phone className="w-5 h-5 mt-0.5" />
-                <div>
-                  <p className="font-medium">+447368647001</p>
-                  <p className="text-sm opacity-90">Direct line available</p>
                 </div>
               </a>
               

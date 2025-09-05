@@ -18,7 +18,7 @@ const ServicesSection = () => {
       title: "Regular Cleaning",
       description: "We recommend this done once or twice a month. We dust all surfaces, remove cobwebs, wipe all the mirrors, vacuum floors and carpets, mop hard floors and laminate.",
       features: ["Dusting & Vacuuming", "Mirror Wiping", "Floor Mopping", "Bin Emptying", "Bedding Optional"],
-      price: "From £30/hour",
+      price: "From £25/hour",
       color: "text-blue-600"
     },
     {
@@ -26,7 +26,7 @@ const ServicesSection = () => {
       title: "Deep Cleaning",
       description: "Our deep cleaning service goes far beyond the basics. We provide a thorough clean of the kitchen, including the inside of appliances like the fridge, oven, and microwave.",
       features: ["Inside Appliances", "Behind & Under Furniture", "Grout Scrubbing", "High-Touch Points", "Fresh & Sanitised"],
-      price: "From £45/hour",
+      price: "From £35/hour",
       color: "text-purple-600"
     },
     {
@@ -34,7 +34,7 @@ const ServicesSection = () => {
       title: "Office Cleaning",
       description: "We understand the importance of a clean, tidy workspace. Our office cleaning service covers everything from daily upkeep to detailed cleans.",
       features: ["Desk & Communal Areas", "Sanitised High-Touch Points", "Carpet & Hard Floors", "Tailored to Schedule"],
-      price: "From £45/hour",
+      price: "From £35/hour",
       color: "text-orange-600"
     },
     {
@@ -42,7 +42,7 @@ const ServicesSection = () => {
       title: "End of Tenancy Cleaning",
       description: "Our End of Tenancy cleaning service is designed to help tenants and landlords ensure the property is spotless and ready for the next chapter.",
       features: ["Comprehensive Deep Clean", "Inside Appliances & Cupboards", "Behind & Under Furniture", "Deposit Back Guarantee"],
-      price: "From £45/hour",
+      price: "From £35/hour",
       color: "text-cyan-600"
     },
     {
@@ -50,7 +50,7 @@ const ServicesSection = () => {
       title: "Post-Party Cleaning",
       description: "Our Post Party cleaning service is here to take the stress out of tidying up after your celebrations.",
       features: ["Complete Venue Clean-up", "Rubbish & Spill Removal", "Kitchen & Bathroom Sanitising", "Quick & Efficient"],
-      price: "From £45/hour",
+      price: "From £35/hour",
       color: "text-pink-600"
     },
     {
