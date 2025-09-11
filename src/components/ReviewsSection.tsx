@@ -6,6 +6,26 @@ import { Star } from "lucide-react";
 const ReviewsSection = () => {
   const reviews = [
     {
+      name: "Amy Pemberton",
+      rating: 5,
+      text: "Highly recommend Yeva. Her ironing skills are fabulous – she did a great job, was very communicative and quick and great value. ⭐⭐⭐⭐⭐ Will definitely use her ironing skills regularly!",
+      avatar: "AP",
+    },
+    {
+      name: "Jordan Karma",
+      rating: 5,
+      text: "Highly recommend Yeva.\n" +
+        "She is professional, efficient and so friendly. Her cleans are always to the best standard and her communication and time keeping is spot on.\n" +
+        "We have her with us weekly, and I’d not be without her now.",
+      avatar: "JK",
+    },
+    {
+      name: "Nicola Silvester Hall",
+      rating: 5,
+      text: "I cannot recommend Yeva highly enough! Her cleaning is excellent and her ironing skills superb. She is very communicative and her attention to detail is exceptional. I will definitely be using her cleaning services regularly 😁⭐⭐⭐⭐⭐💕",
+      avatar: "NS",
+    },
+    {
       name: "amna noor a.",
       rating: 5,
       text: "Vova did an amazing job setting up our bed and cupboard! Very efficiently done!",
