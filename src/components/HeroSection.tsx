@@ -41,12 +41,18 @@ const HeroSection = () => {
                 variant="outline"
                 className="border-primary/40 text-primary bg-white hover:bg-primary hover:text-white px-8 py-4 text-lg"
               >
-                Get Free Quote
+                <a
+                  href="https://wa.me/447368647001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Get Free Quote</span>
+                </a>
               </Button>
             </div>
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 fade-in-up stagger-4">
-              {[
+              { [
                 { icon: CheckCircle, text: "Fully Insured" },
                 { icon: Clock, text: "Same Day Service" },
                 { icon: Shield, text: "100% Guarantee" },
