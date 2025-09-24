@@ -9,6 +9,78 @@ const ReviewsSection = () => {
   const [visibleReviews, setVisibleReviews] = useState(6);
   const reviews = [
     {
+      name: "Nicola Silvester Hall",
+      rating: 5,
+      text: "I cannot recommend Yeva highly enough! Her cleaning is excellent and her ironing skills superb. She is very communicative and her attention to detail is exceptional. I will definitely be using her cleaning services regularly.",
+      avatar: "NS",
+    },
+    {
+      name: "Margaret Davenport",
+      rating: 5,
+      text: "I called Yeva, and Vova came over a couple of days later to assemble my flatpack shelving unit. He did it efficiently, correctly and with no mess, even checked if I wanted it attached to the wall. Very happy to not have to do this myself! Definitely worth the reasonable charge.",
+      avatar: "MD",
+    },
+    {
+      name: "Nick Cobban",
+      rating: 5,
+      text: "On behalf of my friend, many thanks for being punctual, efficient and having high standards of cleaning. Looking forward to continued business with you.",
+      avatar: "NC",
+    },
+    {
+      name: "Debbie Thurley",
+      rating: 5,
+      text: "Good cleaners, very conscientious and methodical. Also friendly.",
+      avatar: "DT",
+    },
+    {
+      name: "Chris Taylor",
+      rating: 5,
+      text: "Zhenya has been helping out while our usual cleaner was off for a few months. She is friendly, honest, a quick learner and a thorough cleaner. She has also been doing our ironing to a good standard. I’d recommend her services.",
+      avatar: "CT",
+    },
+    {
+      name: "Jemma Taylor",
+      rating: 5,
+      text: "Great service! Highly recommended.",
+      avatar: "JT",
+    },
+    {
+      name: "Clare Mitchell",
+      rating: 5,
+      text: "I'd highly recommend Yeva for cleaning and ironing. She does a great job and is always responsive. And she's very friendly and willing to help.",
+      avatar: "CM",
+    },
+    {
+      name: "Wendy Ward",
+      rating: 5,
+      text: "Would gladly recommend Yeva for any of your ironing needs. Not only is the ironing perfect but the turnaround was very quick. Amazing!",
+      avatar: "WW",
+    },
+    {
+      name: "Kayla James",
+      rating: 5,
+      text: "Yeva provides a great ironing service, so professional and reliable. Would highly recommend.",
+      avatar: "KJ",
+    },
+    {
+      name: "André Gysler",
+      rating: 5,
+      text: "Yeva was able to help with a pre tenancy clean following a whole house renovation. She did this at short notice and to a high standard. She was flexible and able to work around me. I would have no hesitation in recommending her services.",
+      avatar: "AG",
+    },
+    {
+      name: "Sally Staples",
+      rating: 5,
+      text: "We are very confident recommending Yeva. For several years Yeva has helped us with Ironing and House Cleaning and she always works to a VERY high standard. She is totally honest and reliable and communicates clearly and in a timely manner.",
+      avatar: "SS",
+    },
+    {
+      name: "Alexander Beukelman",
+      rating: 5,
+      text: "Very grateful for her help getting some shirts washed and ironed last minute on multiple occasions. Quick, efficient and priced well. Thanks!",
+      avatar: "AB",
+    },
+    {
       name: "Amy Pemberton",
       rating: 5,
       text: "Highly recommend Yeva. Her ironing skills are fabulous – she did a great job, was very communicative and quick and great value. ⭐⭐⭐⭐⭐ Will definitely use her ironing skills regularly!",
