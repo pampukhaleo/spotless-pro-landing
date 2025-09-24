@@ -79,18 +79,18 @@ const ReviewsSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reviews.slice(0, visibleReviews).map((review, index) => (
             <Card key={index} className="border-0 shadow-lg bg-card hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8">
+              <CardContent className="p-8 flex flex-col h-full">
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(review.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-accent fill-accent" />
                   ))}
                 </div>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                <p className="text-muted-foreground mb-6 leading-relaxed italic flex-grow">
                   "{review.text}"
                 </p>
                 
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 mt-auto">
                   <Avatar>
                     <AvatarImage src="" />
                     <AvatarFallback className="bg-primary text-primary-foreground font-semibold">
