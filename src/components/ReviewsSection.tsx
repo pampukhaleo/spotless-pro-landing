@@ -14,7 +14,7 @@ const ReviewsSection = () => {
     {
       name: "Jordan Karma",
       rating: 5,
-      text: "Highly recommend Yeva.\n" +
+      text: "Highly recommend Yeva." +
         "She is professional, efficient and so friendly. Her cleans are always to the best standard and her communication and time keeping is spot on.\n" +
         "We have her with us weekly, and I’d not be without her now.",
       avatar: "JK",
