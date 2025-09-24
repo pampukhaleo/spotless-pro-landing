@@ -1,9 +1,12 @@
 
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 
 const ReviewsSection = () => {
+  const [visibleReviews, setVisibleReviews] = useState(6);
   const reviews = [
     {
       name: "Amy Pemberton",
@@ -74,7 +77,7 @@ const ReviewsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reviews.map((review, index) => (
+          {reviews.slice(0, visibleReviews).map((review, index) => (
             <Card key={index} className="border-0 shadow-lg bg-card hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-1 mb-4">
@@ -103,6 +106,18 @@ const ReviewsSection = () => {
             </Card>
           ))}
         </div>
+
+        {visibleReviews < reviews.length && (
+          <div className="text-center mt-12">
+            <Button 
+              variant="outline" 
+              onClick={() => setVisibleReviews(prev => Math.min(prev + 6, reviews.length))}
+              className="px-8 py-3"
+            >
+              Show More Reviews
+            </Button>
+          </div>
+        )}
 
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-4 bg-card p-6 rounded-xl shadow-lg">
