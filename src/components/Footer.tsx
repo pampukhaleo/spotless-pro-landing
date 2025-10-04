@@ -25,7 +25,7 @@ const Footer = () => {
               />
               <div>
                 <h3 className="font-bold text-xl">SpotlessPro</h3>
-                <p className="text-sm opacity-90">Cleaning & Ironing Service LTD</p>
+                <p className="text-sm opacity-90">Cleaning & Ironing Services LTD</p>
               </div>
             </div>
             <p className="opacity-90 leading-relaxed mb-4">
@@ -121,7 +121,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="opacity-90">
-            © 2022 SpotlessPro Cleaning Ironing Service LTD. All rights reserved.
+            © 2022 SpotlessPro Cleaning Ironing Services LTD. All rights reserved.
             <span className="mx-2">|</span>
             Registered in England & Wales
             <span className="mx-2">|</span>
