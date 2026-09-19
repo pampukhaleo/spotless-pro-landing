@@ -146,9 +146,19 @@
   }
 }
 
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 12px 2px hsl(var(--secondary) / 0.25);
+  }
+  50% {
+    box-shadow: 0 0 24px 6px hsl(var(--secondary) / 0.45);
+  }
+}
+
 .animated-gradient-border {
   position: relative;
-  z-index: 0;
+  border-radius: 9999px;
+  animation: glow-pulse 2.5s ease-in-out infinite;
 }
 
 .animated-gradient-border::before {
@@ -168,6 +178,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .animated-gradient-border,
   .animated-gradient-border::before {
     animation: none;
   }
