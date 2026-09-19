@@ -6,6 +6,7 @@ import BeforeAfterSection from "@/components/BeforeAfterSection";
 import AboutSection from "@/components/AboutSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import FAQSection from "@/components/FAQSection";
+import HiringSection from "@/components/HiringSection";
 import BookingForm from "@/components/BookingForm";
 import Footer from "@/components/Footer";
 
