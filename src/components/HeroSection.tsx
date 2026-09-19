@@ -16,16 +16,18 @@ const HeroSection = () => {
   return (
     <section className="hero-gradient min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-4 py-20">
-        <div className="animated-gradient-border flex justify-center mb-8 fade-in-up">
-          <button
-            onClick={() => scrollToSection('careers')}
-            aria-label="Go to careers section"
-            className="group inline-flex items-center gap-2 bg-background hover:bg-background/95 text-foreground rounded-full px-5 py-3 text-sm md:px-7 md:py-3.5 md:text-base font-semibold shadow-md transition-all hover:shadow-lg hover:scale-105"
-          >
-            <Users className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-            <span>We're Hiring — Join Our Team</span>
-            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-secondary transition-transform group-hover:translate-x-1" />
-          </button>
+        <div className="flex justify-center mb-8 fade-in-up">
+          <div className="animated-gradient-border inline-flex">
+            <button
+              onClick={() => scrollToSection('careers')}
+              aria-label="Go to careers section"
+              className="group inline-flex items-center gap-2 bg-background hover:bg-background/95 text-foreground rounded-full px-5 py-3 text-sm md:px-7 md:py-3.5 md:text-base font-semibold shadow-md transition-all hover:shadow-lg hover:scale-105"
+            >
+              <Users className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
+              <span>We're Hiring — Join Our Team</span>
+              <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-secondary transition-transform group-hover:translate-x-1" />
+            </button>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
