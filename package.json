@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "deploy": "npm run clean && npm run build && gh-pages -d dist"
   },
   "dependencies": {
