@@ -10,7 +10,7 @@ const ServicesSection = () => {
       title: "Ironing",
       description: "We work on a Collect and Return basis. We use professional equipment, which gently irons all types of fabric, we also have special sprays that help iron problematic fabrics.",
       features: ["Collect & Return", "Professional Equipment", "All Fabric Types", "24-48h Turnaround"],
-      price: "From £30 per 40l",
+      price: "From £45 per 40l",
       color: "text-green-600"
     },
     {
