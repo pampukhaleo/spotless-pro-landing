@@ -20,6 +20,7 @@ const Index = () => {
       <AboutSection />
       <ReviewsSection />
       <FAQSection />
+      <HiringSection />
       <BookingForm />
       <Footer />
     </div>
