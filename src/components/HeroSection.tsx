@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Star, Clock, Shield } from "lucide-react";
+import { CheckCircle, Star, Clock, Shield, Users, ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToBooking = () => {
@@ -8,9 +8,26 @@ const HeroSection = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="hero-gradient min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-4 py-20">
+        <div className="flex justify-center lg:justify-start mb-8 fade-in-up">
+          <button
+            onClick={() => scrollToSection('careers')}
+            aria-label="Go to careers section"
+            className="group inline-flex items-center gap-2 bg-background/90 hover:bg-background text-foreground border border-primary/20 backdrop-blur-sm rounded-full px-4 py-2.5 text-xs sm:text-sm font-semibold shadow-sm transition-all hover:shadow-md"
+          >
+            <Users className="w-4 h-4 text-secondary" />
+            <span>We're Hiring — Join Our Team</span>
+            <ArrowRight className="w-4 h-4 text-secondary transition-transform group-hover:translate-x-1" />
+          </button>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center space-x-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 fade-in-up">
