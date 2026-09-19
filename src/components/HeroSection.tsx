@@ -20,7 +20,7 @@ const HeroSection = () => {
           <button
             onClick={() => scrollToSection('careers')}
             aria-label="Go to careers section"
-            className="animated-gradient-border group inline-flex items-center gap-2 bg-background/95 hover:bg-background text-foreground backdrop-blur-sm rounded-full px-5 py-3 text-sm md:px-7 md:py-3.5 md:text-base font-semibold shadow-md transition-all hover:shadow-lg hover:scale-105"
+            className="animated-gradient-border group inline-flex items-center gap-2 bg-background hover:bg-background/95 text-foreground rounded-full px-5 py-3 text-sm md:px-7 md:py-3.5 md:text-base font-semibold shadow-md transition-all hover:shadow-lg hover:scale-105"
           >
             <Users className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
             <span>We're Hiring — Join Our Team</span>
